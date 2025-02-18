@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 1000px;
+            background-color: white;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 6px solid #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            background-color: white;
+            border-bottom: 6px solid #ccc;
+        }
+
+        .navbar h2 {
+            font-size: 28px;
+            cursor: pointer;
+            color: #555;
+            padding: 15px 20px;
+        }
+
+        .navbar h2.active {
+            color: #007bff;
+            border-bottom: 6px solid #007bff;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 25px;
+            font-size: 26px;
+            border: 5px solid #ccc;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .summary {
+            background-color: #262837;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            border: 5px solid #444;
+            margin-bottom: 40px;
+        }
+
+        .summary h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .summary span {
+            color: rgb(46, 251, 149);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .investment-list {
+            margin-top: 40px;
+        }
+
+        .investment-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            margin-bottom: 20px;
+            border: 5px solid #ccc;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        .gain {
+            color: green;
+        }
+
+        .loss {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2 class="active">All</h2>
+            <h2>Equity</h2>
+            <h2>Mutual Funds</h2>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a stock">
+        </div>
+
+        <div class="summary">
+            <h1>₹11,991</h1>
+            <h1>Overall Gain <span>₹522.37</span> (+4.55%)</h1>
+            <div class="stats">
+                <div>
+                    <h2>Invested Value</h2>
+                    <h1>₹11,468</h1>
+                </div>
+                <div>
+                    <h2>Today's Gain</h2>
+                    <h1>₹126.69 (+1.10%)</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="investment-list">
+            <div class="investment-item">
+                <div>
+                    <h2>COALINDIA</h2>
+                    <p>3*Avg ₹231.24</p>
+                </div>
+                <div>
+                    <h2 class="gain">₹320.30 (+27.70%)</h2>
+                </div>
+            </div>
+            <div class="investment-item">
+                <div>
+                    <h2>DALMIASUG</h2>
+                    <p>2*Avg ₹425.92</p>
+                </div>
+                <div>
+                    <h2 class="gain">₹47.25 (+10.09%)</h2>
+                </div>
+            </div>
+            <div class="investment-item">
+                <div>
+                    <h2>HDFCBANK</h2>
+                    <p>1*Avg ₹1,652.88</p>
+                </div>
+                <div>
+                    <h2 class="loss">-₹131.58 (-7.91%)</h2>
+                </div>
+            </div>
+            <div class="investment-item">
+                <div>
+                    <h2>IDEA</h2>
+                    <p>4*Avg ₹9.80</p>
+                </div>
+                <div>
+                    <h2 class="gain">₹9.10 (+28.91%)</h2>
+                </div>
+            </div>
+            <div class="investment-item">
+                <div>
+                    <h2>IRFC</h2>
+                    <p>4*Avg ₹78.00</p>
+                </div>
+                <div>
+                    <h2 class="gain">₹78.00 (+18.00%)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
